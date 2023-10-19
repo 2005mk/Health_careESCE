@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take_care</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .main-left,
+        .main-right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-right {
+            margin-left: 0;
+        }
+        .button
+        {
+            margin-left:90px;
+        }
+        #b1, #b2 {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: #1F2833;
+            backdrop-filter: blur(2px);
+            padding: 20px 50px;
+            color: white;
+            border: none;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+            animation: slide;
+            animation-duration: 3s;
+        }
+        p{
+            font-size: 30px;
+            color:solid#1F2833;
+        }
+        .cap{
+            font-size:40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:#1F2833;
+        }
+        @keyframes slide {
+            from{
+                transform: translateX(500px);
+            }
+            
+        }
+    </style>
+    <script>
+        function Re1()
+        {
+             window.location.href="L2.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="main-left">
+        <img id="a" src="https://wallpaperaccess.com/full/136920.jpg" alt="">
+    </div>
+    <div class="main-right">
+        <div class="button">
+            <div class="cap">
