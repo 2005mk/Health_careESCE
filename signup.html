@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take_care</title>
+</head>
+<body>
+    <div class="card">
+        <p>Take_care</p>
+        <div class="c2">
+            <input id="a" type="text" placeholder="username" required>
+            <input id="b" type="text" placeholder="E-mail" required>
+            <input id="c" type="password" placeholder="Password" required>
+            <input id="d" type="number" placeholder="Age" required>
+            <input id="e" type="text" placeholder="Height" required>
+            <input id="f" type="text" placeholder="Weight" required>
+            <button id="btn" onclick="Re1()">Sign-up</button>
+        </div>
+    </div>
+        <script>
+            function Re1() {
+                var U = document.getElementById("a").value;
+                var E = document.getElementById("b").value;
+                var P = document.getElementById("c").value;
+                var A = document.getElementById("d").value;
+                var H = document.getElementById("e").value;
+                var W = document.getElementById("f").value;
+
+                if (U.trim() === "" || E.trim() === "" || P.trim() === "" || A.trim() === "" || H.trim() === "" || W.trim() === "") {
+                    alert("FILL ALL DETAILS REQUIRED");
+                } else {
+                    window.location.href = "L2.html";
+                }
+            }
+        </script>
+    <style>
+        p {
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body {
+            background-color: #1F2833;
+        }
+        #btn {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: #f6f6f6;
+            backdrop-filter: blur(2px);
+            padding: 20px 50px;
+            color: rgb(0, 0, 0);
+            border: none;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+        }
+        .card {
+            width: 40%;
+            padding-top: 500px;
+            padding-left: 900px;
+        }
+        .c2 {
+            padding-top: 90px;
+            border-radius: 20px;
+            border: 2px solid White;
+            color: #1F2833;
+            padding-bottom: 200px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(20px);
+        }
+        input {
+            border: none;
+            border-radius: 20px;
+            border-bottom: 2px solid white;
+            background-color: transparent;
+            width: 50%;
+            font-size: 20px;
+            color: white;
+            height: 60px;
+            margin-bottom: 20px; /* Add margin at the bottom to create a gap */
+        }
+    </style>
+</body>
+</html>
